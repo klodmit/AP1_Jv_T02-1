@@ -88,12 +88,12 @@
 - Объяви в абстрактном классе Animal метод getFeedInfoKg(), который возвращает вещественное количество корма.
 - Создай класс Dog, который наследуется от абстрактного класса Animal.
 - Реализуй конструктор для класса Dog, который принимает три параметра: строка имени питомца, целочисленный возраст, вещественный вес питомца и передаёт их в конструктор базового класса.
-- Реализуй метод getFeedInfoKg(), который вычисляет количество необходимого корма по следующей формуле: кол-во корма = масса собаки * 0.3.
-- Переопредели метод toString() в классе Dog, чтобы формировалась следующая строка: «Dog name = [имя_питомца], age = [возраст_питомца], mass = [масса_питомца]».
+- Реализуй метод getFeedInfoKg() в классе Dog, который вычисляет количество необходимого корма по следующей формуле: кол-во корма = масса питомца * 0.3.
+- Переопредели метод toString() в классе Dog, чтобы формировалась следующая строка: «Dog name = [имя_питомца], age = [возраст_питомца], mass = [масса_питомца], feed = [порция_питомца]».
 - Создай класс Cat, который наследуется от абстрактного класса Animal.
 - Реализуй конструктор для класса Cat, который принимает три параметра: строка имени питомца, целочисленный возраст, вещественный вес питомца и передаёт их в конструктор базового класса.
-- Реализуй метод getFeedInfoKg(), который вычисляет количество необходимого корма по следующей формуле: кол-во корма = масса кошки * 0.1.
-- Переопредели метод toString() в классе Cat, чтобы формировалась следующая строка: «Cat name = [имя_питомца], age = [возраст_питомца], mass = [масса_питомца]».
+- Реализуй метод getFeedInfoKg() в классе Cat, который вычисляет количество необходимого корма по следующей формуле: кол-во корма = масса питомца * 0.1.
+- Переопредели метод toString() в классе Cat, чтобы формировалась следующая строка: «Cat name = [имя_питомца], age = [возраст_питомца], mass = [масса_питомца], feed = [порция_питомца]».
 - Программа считывает количество питомцев.
 - Программа считывает тип вводимого питомца: dog/cat.
 - Каждый питомец добавляется в общий список pets.
@@ -152,8 +152,8 @@
 | Входные данные                                                                                                                               | Выходные данные                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 4 <br/> dog <br/> Snowball <br/> 12 <br/> guinea <br/> Piggy <br/> 5 <br/> cat <br/> Snowball <br/> 9 <br/> hamster <br/> Wave <br/> 2 <br/> | GuineaPig name = Piggy, age = 5. I can chill for 12 hours <br/> Hamster name = Wave, age = 2. I can chill for 8 hours <br/> Dog name = Snowball, age = 12. I can hunt for robbers <br/> Cat name = Snowball, age = 9. I can hunt for mice <br/> |
-| 2 <br/> dog <br/> Snowball <br/> 12  <br/> cat <br/> Kitty <br/> 10 <br/>                                                                    | Dog name = Snowball, age = 12. I can hunt for robbers <br/> Cat name = Kitty, age = 10. I can hunt for mice <br/>                                                                                                                                     |
-| 5 <br/> turtle <br/> cat <br/> Kitty <br/> -10 <br/> guinea <br/> Piggy <br/> 3 <br/>                                                        | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Incorrect input. FangsCnt <0 <br/> Incorrect input. weight <=0 <br/>  GuineaPig name = Piggy. I can chill for 12 hours  <br/>                                           |
+| 2 <br/> dog <br/> Snowball <br/> 12  <br/> cat <br/> Kitty <br/> 10 <br/>                                                                    | Dog name = Snowball, age = 12. I can hunt for robbers <br/> Cat name = Kitty, age = 10. I can hunt for mice <br/>                                                                                                                                    |
+| 3 <br/> turtle <br/> cat <br/> Kitty <br/> -10 <br/> guinea <br/> Piggy <br/> 3 <br/>                                                        | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> GuineaPig name = Piggy. I can chill for 12 hours <br/>                                           |
 
 
 ## Задание 4. Увеличение возраста конкретных питомцев в функциональной парадигме
@@ -181,11 +181,11 @@
 - Программа должна использовать Stream API.
 - Запрещается использовать любые операторы повторения.
 
-| Входные данные                                                                                                       | Выходные данные                                                                                                                          |
-|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 8 <br/> dog <br/> Snowball3 <br/> 10 <br/>       | Dog name = Snowball, age = 13 <br/> Dog name = Snowball2, age = 8 <br/> Dog name = Snowball3, age = 11                                   |
-| 3 <br/> dog <br/> Snowball <br/> 8 <br/> cat <br/> Kitty <br/> 9 <br/> dog <br/> Balloon <br/> 9 <br/>               | Dog name = Snowball, age = 8 <br/> Cat name = Kitty, age = 9 <br/> Dog name = Balloon, age = 9 <br/>                                     |
-| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>  | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Dog name = Balloon, age = 11 <br/> Cat name = Fura, age = 9   |
+| Входные данные                                                                                                       | Выходные данные                                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 8 <br/> dog <br/> Snowball3 <br/> 10 <br/>       | Dog name = Snowball, age = 13 <br/> Dog name = Snowball2, age = 8 <br/> Dog name = Snowball3, age = 10                                 |
+| 3 <br/> dog <br/> Snowball <br/> 8 <br/> cat <br/> Kitty <br/> 9 <br/> dog <br/> Balloon <br/> 9 <br/>               | Dog name = Snowball, age = 8 <br/> Cat name = Kitty, age = 9 <br/> Dog name = Balloon, age = 9 <br/>                                   |
+| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>  | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Dog name = Balloon, age = 10 <br/> Cat name = Fura, age = 9 |
 
 ## Задание 5. Отслеживание прогулок питомцев
 Разработай модуль, который отслеживает время начала и завершения прогулки питомца.
@@ -201,7 +201,7 @@
 - Создай класс Cat, который наследуется от абстрактного класса Animal.
 - Реализуй конструктор для класса Cat, который принимает два параметра: строка имени питомца, целочисленный возраст и передаёт их в конструктор базового класса.
 - Переопредели метод toString() в классе Cat, чтобы формировалась следующая строка: «Cat name = [имя_питомца], age = [возраст_питомца]».
-- Переопредели метод goToWalk() в классе Dog следующим образом: метод вычисляет время прогулки в секундах, вызывает TimeUnit.SECONDS.sleep() для вычисленного времени, возвращает вычисленное время.
+- Переопредели метод goToWalk() в классе Cat следующим образом: метод вычисляет время прогулки в секундах, вызывает TimeUnit.SECONDS.sleep() для вычисленного времени, возвращает вычисленное время.
 - Вычисление времени прогулки для класса Dog выполняется по следующей формуле: [время_прогулки] = [возраст_питомца] * 0,5.
 - Вычисление времени прогулки для класса Cat выполняется по следующей формуле: [время_прогулки] = [возраст_питомца] * 0,25.
 - Программа считывает количество питомцев.
@@ -211,7 +211,7 @@
 - Если ввели отрицательный или нулевой возраст, то программа выводит: «Incorrect input. Age <= 0» и переходит к следующему вводу.
 - Программа не завершается с ошибкой при некорректных входных данных. Она выводит: «Couldn't parse a number. Please, try again» и повторяет попытку ввода.
 - Программа должна вызвать метод goToWalk() у каждого питомца.
-- Каждый вызов метода goToWalk() выполняться асинхронно в отдельном потоке.
+- Каждый вызов метода goToWalk() должен выполняться асинхронно в отдельном потоке.
 - Программа должна дождаться выполнения всех вызовов метода goToWalk(), перед тем как завершиться.
 - При завершении прогулки, программа должна выводить на одной строке в консоль следующую информацию: информация о питомце, время старта прогулки, время конца прогулки
 - Время старта прогулки и время конца прогулки должны вычисляться относительно времени старта программы.
@@ -220,9 +220,9 @@
 
 | Входные данные                                                                                                        | Выходные данные                                                                                                                                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 8 <br/> dog <br/> Snowball3 <br/> 10 <br/>        | Dog name = Snowball2, age = 8, start time = 0.20, end time = 4.20  <br/> Dog name = Snowball3, age = 10, start time = 0.30, end time = 5.30 <br/> Dog name = Snowball, age = 12, start time = 0.10, end time = 6.60 |
+| 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 8 <br/> dog <br/> Snowball3 <br/> 10 <br/>        | Dog name = Snowball2, age = 8, start time = 0.20, end time = 4.20  <br/> Dog name = Snowball3, age = 10, start time = 0.30, end time = 5.30 <br/> Dog name = Snowball, age = 12, start time = 0.10, end time = 6.10 |
 | 3 <br/> dog <br/> Snowball <br/> 8 <br/> cat <br/> Kitty <br/> 9 <br/> dog <br/> Balloon <br/> 9 <br/>                | Cat name = Kitty, age = 9, start time = 0.20, end time = 2.45 <br/> Dog name = Snowball, age = 8, start time = 0.10, end time = 4.10 <br/> Dog name = Balloon, age = 9, start time = 0.30, end time = 4.80          |
-| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>   | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Cat name = Fura, age = 9, start time = 0.20, end time = 4.70 <br/> Dog name = Balloon, age = 11, start time = 0.10, end time = 5.60      |
+| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>   | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Cat name = Fura, age = 9, start time = 0.20, end time = 2.45 <br/> Dog name = Balloon, age = 11, start time = 0.10, end time = 5.60      |
 
 ## Задание 6. Итератор питомцев
 Разработай модуль, который реализует итератор питомцев.
