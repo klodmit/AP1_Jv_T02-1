@@ -77,7 +77,7 @@
 |-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 10 <br/> dog <br/> Snowball3 <br/> 9 <br/>  | Dog name = Snowball, age = 12 <br/> Dog name = Snowball2, age = 10 <br/> Dog name = Snowball3, age = 9 <br/>  |
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> cat <br/> Kitty <br/> 10 <br/> dog <br/> Balloon <br/> 9 <br/>        | Dog name = Snowball, age = 12 <br/> Cat name = Kitty, age = 10 <br/> Dog name = Balloon, age = 9 <br/>        |
-| 3 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> cat <br/> Fura <br/> 9 <br/>                              | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Cat name = Fura, age = 9 <br/>     |
+| 3 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> cat <br/> Fura <br/> 9 <br/>                              | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <= 0 <br/> Cat name = Fura, age = 9 <br/>     |
 
 ## Задание 2. Определение количества корма питомцу
 Разработай модуль, который по типу питомца определяет, сколько грамм корма ему необходимо на 1 порцию.
@@ -108,7 +108,7 @@
 |-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> 5.0 <br/> dog <br/> Snowball2 <br/> 10 <br/> 10.0 <br/> dog <br/> Snowball3 <br/> 9 <br/> 9.0 <br/> | Dog name = Snowball, age = 12, mass = 5.00, feed = 1.50 <br/> Dog name = Snowball2, age = 10, mass = 10.00, feed = 3.00 <br/> Dog name = Snowball3, age = 9, mass = 9.00, feed = 2.70 <br/> |
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> 5.0 <br/> cat <br/> Kitty <br/> 10 <br/> 10.0 <br/> dog <br/> Balloon <br/> 9 <br/> 9.0 <br/>       | Dog name = Snowball, age = 12, mass = 5.00, feed = 1.50 <br/> Cat name = Kitty, age = 10, mass = 10.00, feed = 1.00 <br/> Dog name = Balloon, age = 9, mass = 9.00, feed = 2.70 <br/>       |
-| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 9 <br/> -9 <br/> cat <br/> Fura <br/> 9 <br/> 12.5 <br/>        | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Incorrect input. Mass <= 0 <br/> Cat name = Fura, age = 9, mass = 12.50, feed = 1.25                             |
+| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 9 <br/> -9 <br/> cat <br/> Fura <br/> 9 <br/> 12.5 <br/>        | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <= 0 <br/> Incorrect input. Mass <= 0 <br/> Cat name = Fura, age = 9, mass = 12.50, feed = 1.25                             |
 
 ## Задание 3. Списки травоядных и всеядных питомцев
 Разработай модуль, который сначала выводит только травоядных животных, а затем только всеядных животных.
@@ -153,7 +153,7 @@
 |----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 4 <br/> dog <br/> Snowball <br/> 12 <br/> guinea <br/> Piggy <br/> 5 <br/> cat <br/> Snowball <br/> 9 <br/> hamster <br/> Wave <br/> 2 <br/> | GuineaPig name = Piggy, age = 5. I can chill for 12 hours <br/> Hamster name = Wave, age = 2. I can chill for 8 hours <br/> Dog name = Snowball, age = 12. I can hunt for robbers <br/> Cat name = Snowball, age = 9. I can hunt for mice <br/> |
 | 2 <br/> dog <br/> Snowball <br/> 12  <br/> cat <br/> Kitty <br/> 10 <br/>                                                                    | Dog name = Snowball, age = 12. I can hunt for robbers <br/> Cat name = Kitty, age = 10. I can hunt for mice <br/>                                                                                                                                    |
-| 3 <br/> turtle <br/> cat <br/> Kitty <br/> -10 <br/> guinea <br/> Piggy <br/> 3 <br/>                                                        | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> GuineaPig name = Piggy. I can chill for 12 hours <br/>                                           |
+| 3 <br/> turtle <br/> cat <br/> Kitty <br/> -10 <br/> guinea <br/> Piggy <br/> 3 <br/>                                                        | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <= 0 <br/> GuineaPig name = Piggy, age = 3. I can chill for 12 hours <br/>                                           |
 
 
 ## Задание 4. Увеличение возраста конкретных питомцев в функциональной парадигме
@@ -185,7 +185,7 @@
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 8 <br/> dog <br/> Snowball3 <br/> 10 <br/>       | Dog name = Snowball, age = 13 <br/> Dog name = Snowball2, age = 8 <br/> Dog name = Snowball3, age = 10                                 |
 | 3 <br/> dog <br/> Snowball <br/> 8 <br/> cat <br/> Kitty <br/> 9 <br/> dog <br/> Balloon <br/> 9 <br/>               | Dog name = Snowball, age = 8 <br/> Cat name = Kitty, age = 9 <br/> Dog name = Balloon, age = 9 <br/>                                   |
-| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>  | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Dog name = Balloon, age = 10 <br/> Cat name = Fura, age = 9 |
+| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>  | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <= 0 <br/> Dog name = Balloon, age = 10 <br/> Cat name = Fura, age = 9 |
 
 ## Задание 5. Отслеживание прогулок питомцев
 Разработай модуль, который отслеживает время начала и завершения прогулки питомца.
@@ -222,7 +222,7 @@
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 8 <br/> dog <br/> Snowball3 <br/> 10 <br/>        | Dog name = Snowball2, age = 8, start time = 0.20, end time = 4.20  <br/> Dog name = Snowball3, age = 10, start time = 0.30, end time = 5.30 <br/> Dog name = Snowball, age = 12, start time = 0.10, end time = 6.10 |
 | 3 <br/> dog <br/> Snowball <br/> 8 <br/> cat <br/> Kitty <br/> 9 <br/> dog <br/> Balloon <br/> 9 <br/>                | Cat name = Kitty, age = 9, start time = 0.20, end time = 2.45 <br/> Dog name = Snowball, age = 8, start time = 0.10, end time = 4.10 <br/> Dog name = Balloon, age = 9, start time = 0.30, end time = 4.80          |
-| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>   | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Cat name = Fura, age = 9, start time = 0.20, end time = 2.45 <br/> Dog name = Balloon, age = 11, start time = 0.10, end time = 5.60      |
+| 4 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> dog <br/> Balloon <br/> 10 <br/> cat <br/> Fura <br/> 9 <br/>   | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <= 0 <br/> Cat name = Fura, age = 9, start time = 0.20, end time = 2.45 <br/> Dog name = Balloon, age = 11, start time = 0.10, end time = 5.60      |
 
 ## Задание 6. Итератор питомцев
 Разработай модуль, который реализует итератор питомцев.
@@ -260,4 +260,4 @@
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> dog <br/> Snowball2 <br/> 10 <br/> dog <br/> Snowball3 <br/> 9 <br/> | Dog name = Snowball, age = 12 <br/> Dog name = Snowball2, age = 10 <br/> Dog name = Snowball3, age = 9 <br/> |
 | 3 <br/> dog <br/> Snowball <br/> 12 <br/> cat <br/> Kitty <br/> 10 <br/> dog <br/> Balloon <br/> 9 <br/>       | Dog name = Snowball, age = 12 <br/> Cat name = Kitty, age = 10 <br/> Dog name = Balloon, age = 9 <br/>       |
-| 3 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> cat <br/> Fura <br/> 9 <br/>                             | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <=0 <br/> Cat name = Fura, age = 9 <br/>    |
+| 3 <br/> hamster <br/> cat <br/> Kitty <br/> -10 <br/> cat <br/> Fura <br/> 9 <br/>                             | Incorrect input. Unsupported pet type <br/> Incorrect input. Age <= 0 <br/> Cat name = Fura, age = 9 <br/>    |
